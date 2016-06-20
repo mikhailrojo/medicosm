@@ -1,0 +1,30 @@
+#bodyDiv{
+		overflow-x: hidden !important;
+	}
+
+body.color{
+	background-color: $darkGrey;
+}
+
+body.feedback{
+	background: url("../img/feedback-background4.jpg");
+	background-repeat: no-repeat;
+	background-size: 103%;
+	background-position-x: 0px;
+	background-position-y: 0px;
+	}
+	
+
+body.vacancy{
+	background-image: url("../img/vacancy-background.png");
+	background-repeat: no-repeat;
+	background-position-y: 180px;
+	}	
+
+/*оставляю это пока чтобы определиться с нижним контентом*/
+.content{
+	width: 960px;
+	margin: 0 auto;
+	@include clearfix;
+	position: relative;
+}

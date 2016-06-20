@@ -1,0 +1,29 @@
+<div class="popUp writePop" ng-controller="formCtrl" id="writePop">
+	<div id="feedback-form">
+		<form name="myForm1" novalidate ng-submit="writeLetter(form)" ng-disabled="myForm.$invalid" class="css-form">
+			<table>
+				<tr ng-show="wasSent" class="sucessfullySent"><td></td><td>Ваше сообщение было отправлено! Спасибо</td></tr>
+				<tr>
+					<td><img alt="writeUs" src="/img/napis.png"></td><td> <h3>medicosm@medicosm.ru</h3> </td>
+				</tr>
+				
+				<tr>
+					<td></td><td><label class="gorod">Ваш город</label><input id="city" type="text" placeholder="Санкт-Петербург" ng-model="form.city" required></td>
+				</tr>
+				<tr>
+					<td><label>Тема письма</label></td><td><input type="text" ng-model="form.subject" type="text" required></td>
+				</tr>
+				<tr>
+					<td><label>ФИО</label></td><td><input type="text" ng-model="form.name" type="text" required></td>
+				</tr>
+				<tr>
+					<td><label>Текст письма</label></td><td> <textarea ng-model="form.message" type="text" required></textarea></td>
+				</tr>
+				<tr><td></td><td> <h3><button ng-disabled="myForm1.$invalid">отправить</button></h3></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+<div id="blackScreen" ng-click="removeMe()">
+</div>

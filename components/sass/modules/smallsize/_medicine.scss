@@ -1,0 +1,95 @@
+
+@include breakpoint(max-width 960px){
+	
+	div.central{
+		padding-left: 0;
+		width: 290px;
+	}
+
+
+	div.central.construction{
+		width: 420px;
+	}
+
+	
+	div.central.medicine{
+		
+		
+		img.catalogue{
+			margin-bottom: 19px;
+		}
+		
+		h1 img{
+			display: none;
+		}
+		
+		aside{
+			padding-left: 0;
+		}
+		
+		h1, h2{
+			margin-left: 0;
+		}
+		
+		div.rightPart{
+			float: left;
+			width: auto;
+			
+			ul#directions{
+				display: none;
+			}
+		}
+	}
+	
+	div.central.cosmetics{
+	
+	
+		div#rightPart{
+			width: 273px;
+			margin: 0 auto;
+		}
+	
+
+		
+		img.catalogue{
+			margin-bottom: 19px;
+		}
+		
+		h1 {
+		
+		font-size: 50px;
+		position: relative;
+		
+			img{
+				/*
+				margin-left: 10px;
+				position: absolute;
+				top: 25px;
+				left: 320px;
+				*/
+				display: none;
+				
+			}
+		}
+		
+		
+		aside{
+			padding-left: 0;
+		}
+		
+		h1, h2{
+			margin-left: 0;
+		}
+		
+		div.rightPart{
+			float: left;
+			width: auto;
+			
+			ul#directions{
+				display: none;
+			}
+		}
+	}
+
+
+}

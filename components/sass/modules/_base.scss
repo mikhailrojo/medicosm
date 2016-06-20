@@ -1,0 +1,119 @@
+$green : rgba(102,188,41, 1);
+$bordo: rgba(154, 48, 86, 1);
+$darkblue: rgba(0,84,141,1);
+$blue: rgba(32,85,138,1);
+$gray: rgba(153,153,154,1);
+$darkGrey: rgba(75,85,88,1);
+$grayish: rgba(79,85,88,1);
+
+$regular : 14px;
+$nav-size: 12px;
+$header-font: 35px;
+
+
+$thin     : 200;
+$normal   : 400;
+$bold     : 600;
+$heavy    : 800;
+/*
+
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
+*/
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  } //before, after
+  &:after {
+    clear: both;
+  } //after
+} //clearfix
+
+@mixin polosa{
+	border-top: solid 2px $green;
+	position: relative;
+	
+	&:after{
+		content: "";
+		position: absolute;
+		top: -2px;
+		left: 0;
+		height: 2px;
+		width: 30%;
+		background: white;
+		}
+}
+@mixin polosa2{
+	border-top: solid 2px $green;
+	position: relative;
+	
+	&:after{
+		content: "";
+		position: absolute;
+		top: -2px;
+		left: 0;
+		height: 2px;
+		width: 15%;
+		background: $bordo;
+		}
+}
+
+@mixin polosa3{
+	border-top: solid 2px white;
+	position: relative;
+	
+	&:after{
+		content: "";
+		position: absolute;
+		top: -2px;
+		left: 0;
+		height: 2px;
+		width: 30%;
+		background: $bordo;
+		}
+}
+/*
+@mixin polosa4{
+	border-top: solid 2px $green;
+	position: relative;
+	
+	&:after{
+		content: "";
+		position: absolute;
+		top: -2px;
+		left: 0;
+		height: 1px;
+		width: 15%;
+		background: $bordo;
+		}
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

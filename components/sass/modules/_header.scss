@@ -1,0 +1,71 @@
+#subHeader{
+	height: 140px;
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 80px;
+	padding-top: 8px; 
+	
+	div.cell.big-hidden{
+		display: none;
+	}
+	
+	input[type="text"] {
+	  margin-top: 8px;
+	  padding-left: 10px;
+	  border-radius: 25px 25px;
+	  box-shadow: none;
+	  appearance: none;
+	  float: left;
+	  border: 1px;
+	  width: 17%;
+	  line-height: 16px;
+	  height: 22px;
+	  }
+
+	input[type="text"]:focus {
+	  outline: none;
+	}
+
+
+}
+
+
+div.cell{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	
+	a{
+		color: white;
+	}
+	
+	p{
+		font-size: 14px;
+		font-weight: 100;
+		
+		span{
+			font-size: 16px;
+			font-weight: 200;
+		}
+	}
+	img.pozv{
+		margin-left: 50px;
+		margin-right: 8px;
+		width: 63px;
+		height: 63px;
+	}
+	
+	img.napis{
+		margin-left: 25px;
+		margin-right: 17px;
+		width: 63px;
+		height: 63px;
+	}
+}
+	
+	
+	
+
+
+

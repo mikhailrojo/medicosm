@@ -1,0 +1,38 @@
+/*about*/
+
+div.central{
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 80px; 
+	
+	h1{
+		font-size: 60px;
+		margin-left: 340px;
+		
+		img{
+
+		}
+	}
+	
+	h2{	
+		font-size: 60px;
+		margin-left: 430px;
+		@include polosa2;
+		width: 216px;
+		margin-top: 28px;
+	}
+	
+	p{
+		margin-top: 37px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		font-weight: 200px;
+	}
+	
+	img#krugi{
+		margin-bottom: 25px;
+	}
+	
+}
+

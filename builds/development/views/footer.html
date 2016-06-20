@@ -1,0 +1,60 @@
+<footer>
+    <div id="footer2" >
+    	<img id="leaf-decor4" src="./img/leaf-decor4.png">
+    		<div class="footerContent">
+    			<div id="callUs" ng-click="makeVisible('call')">
+    				<div class="cell"><img src="img/pozv.png" class="contactCircle pozv" id=""></div>
+    				<div class="cell"><p name="changeColor">+7(812)<span> 648-03-29</span><br>Связаться с менеджером</p></div>
+    				<p>Звоните! Наши менеджеры проконсультируют Вас по всему ассортименту и помогут подобрать товар по лучшим ценам.</p>
+    				<div class="border">+7(812)648-03-29</div>
+    			</div>
+    			<div id="writeUs" ng-click="makeVisible('email')">
+    				<div class="cell"><img src="img/napis.png" class="contactCircle napis"></div>
+    				<div class="cell"><a name="changeColor" href="">medicosm@medicosm.com</a></div>
+    				<p>Вы можете написать нам письмо, и менеджеры свяжутся с Вами и отправят каталог наших товаров с ценами.</p>
+    				<div class="border">medicosm@medicosm.ru</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div id="footer3" >
+    		<div class="footerContent">
+	    		<ul class="footerFeedback">
+	    			<li><a href="#/#top"><img src="img/dom.png" alt=""></a></li>
+	    			<li ng-click="makeVisible('email')"  class="sm-hidden"><img src="img/pismo.png" alt=""></li>
+	    			<li class="big-hidden"><a href="mailto:medicosm@medicosm.ru"><img src="img/pismo.png" alt=""></a></li>
+	    			<li ng-click="makeVisible('call')" class="sm-hidden"><img src="img/telefon.png" alt=""></li>
+	    			<li class="big-hidden"><a href="tel:+78126480329"><img src="img/telefon.png" alt=""></a></li>
+	    			<li><a href="http://vk.com" target="_blank"><img src="img/vk.png" alt=""></a></li>
+	    		</ul>
+
+	    		<nav>
+					<ul>
+						<li id="novosti"><a href="#/construction#up">Новости</a></li>
+						<li id"o-kompanii"><a href="#/about#up">О компании</a>
+							<ul>
+							<li><a href="#/vacancy">вакансии</a></li>
+							<li><a href="#/construction">мы</a></li>
+							</ul>
+						</li>
+						<li id="napravlenia"><a href="#/construction#up">Направления</a>
+							<ul>
+							<li><a href="#/cosmetics#up">косметология</a></li>
+							<li><a href="#/medicine#up">медицина</a></li>
+							<li><a href="#/sanitary#up">санитарно-гигиенические<br>товары</a></li>
+							</ul>
+						</li>
+						<li><a href="#/construction/#up">сертификация</a></li>
+						<li><a href="#/contacts#up">Контакты</a>
+							<ul>
+							<li><a href="#/feedback">обратная связь</a></li>
+
+							</ul>
+						</li>
+					</ul>
+			</nav>
+    		</div>
+    		<img id="leaf-decor3" src="./img/leaf-decor3.png">
+    	</div>
+</footer>
+	 	<ng-include class="cssFade" src="'views/writePop.html'" ng-controller="formCtrl" ng-show="formShowWrite" ></ng-include>
+	 	<ng-include class="cssFade" src="'views/callPop.html'" ng-controller="formCtrl" ng-show="formShowCall"></ng-include>

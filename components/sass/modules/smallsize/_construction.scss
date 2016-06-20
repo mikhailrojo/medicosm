@@ -1,0 +1,35 @@
+/*small-construction*/
+@include breakpoint(max-width 960px){
+	
+	div.central.construction{
+	
+		width: 290px;
+	
+		h1,h2{
+			margin-left: 0;
+			font-size: 42px;
+			
+			img{
+				display: none;
+			}
+		}
+		
+		ul{
+			margin: 0;
+			
+			li{
+				line-height: 22px;	
+			}
+			
+			img#smallConstruction{
+				display: block;
+				
+			}
+			
+			img#bigConstruction{
+				display: none;
+			}
+
+		}
+	}	
+}//include breakpoint

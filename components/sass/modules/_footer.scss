@@ -1,0 +1,146 @@
+
+/*футер*/
+
+/*footer1*/
+
+
+
+
+
+/*footer2*/
+
+footer { 
+
+	
+	
+	.footerContent{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+
+	div#footer2{
+		padding-top: 35px;
+		padding-bottom: 23px;
+		@include clearfix;
+		background-color: rgba(85,85,85,1);
+		color: white;
+		position: relative;
+		
+		div.footerContent{	
+			
+			img{
+				float: left;
+				margin: 0px 10px 9px 0px;
+			}
+			h2{
+				font-size: $header-font;
+				color: $green;
+				margin-top: 44px;
+			}
+			p{
+				color: white;
+				clear: both;
+				padding-right: 40px;
+				font-size: $regular;
+			}
+			a{
+				color: white;
+				font-size: 18px;
+			}
+			
+			div.border{
+			@include border-radius(20px);
+			display: inline-block;
+			border: 1px solid white;
+			padding: 17px 30px;
+			margin-top: 30px;
+			font-size: 16px;
+						
+			}
+		 }
+	}
+}
+
+
+div#callUs, div#writeUs{
+	width: 50%;
+	float: left;
+}
+
+
+
+
+
+/*футер фидбэк*/
+
+ 
+
+ul.footerFeedback{
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 34px;
+	padding-left: 0;
+	
+		li{
+		display: inline-block;
+		margin-right: 12px;
+		} 
+		
+		li.big-hidden{
+				display: none;
+			}
+}
+
+
+/*футер меню*/
+
+div#footer3 {
+		background-color: rgba(75,75,75,1);
+		position: relative;
+		
+		nav{
+		margin-top: 0px;
+		padding-bottom: 25px;
+		
+		ul li#novosti{
+			width: 85px;
+		}
+		ul li#o-kompanii ul li{
+			width: 91px;
+		}
+		
+		ul li#napravlenia, ul li#napravlenia ul li{
+			width: 183px;
+		}
+		
+		
+	
+		ul li{
+		display: inline-block;
+		position: relative;
+		width: 135px;
+		margin-bottom: 3px;
+		text-align: center;
+		text-transform: lowercase;
+		vertical-align: top;
+		padding-top: 10px;
+		text-align: left;
+			
+			
+			
+			a{
+			color: white;
+			font-weight: 200;
+			font-size: 14px;
+			
+			}
+	
+			a:hover{
+				color: $green;
+			}
+		}
+	}
+}
+

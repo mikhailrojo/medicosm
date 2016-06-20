@@ -1,0 +1,31 @@
+   <div class="row">
+      	<div class="col-md-8 col-sm-7 cssFade" ng-hide="redakciya">
+	       	<table class="table table-hover" >
+	       		<tr>
+	       			<th>№</th>
+		       		<th>Название</th>
+		       		<th>Цифра</th>
+		       		<th ng-show="adminLoggedIn">Дополнительно</th>
+	       		</tr>
+	       		<tr ng-repeat="info in info">
+	       			<td>{{$index+1}}</td>
+		       		<td>{{info.name}}</td>
+		       		<td>{{info.digit}}</td>
+		       		<td ng-show="adminLoggedIn"><button ng-click="editDigitInForm(info, $index)" class="btn btn-info">редактировать</button></td>
+	       		</tr>
+	       	</table>
+      	</div><!-- col-md-8 -->
+      	
+      	<div class="col-md-4 well" ng-show="adminLoggedIn">
+      		
+		    	<form name="newForm">
+		    		<div class="form-group">
+				    	<label for="name">Новая цифра</label>
+				    	<input id="name" name="name" type="text" class="form-control" ng-model="form.digit" ng-required="true">
+		    		</div>
+		    		<button ng-hide="hideSubmit" class="btn btn-success" type="submit" ng-disabled="newForm.$invalid" ng-click="changeDigit(form); form={}">Записать</button>
+		    		<button ng-hide="!hideSubmit" class="btn btn-info btn-block" type="submit" ng-click="editCandidate(form); form={}">Отредактировать</button>
+		    		<button ng-hide="!hideSubmit" class="btn btn-info btn-block" type="submit" ng-click="cancelIditing()">Отменить редакцию</button>
+		    	</form>
+		    </div><!-- col-md-4 -->
+		</div><!-- row -->

@@ -1,0 +1,294 @@
+/*первая секция косметика*/
+
+div#cosmetics1, div#cosmetics2, div#cosmetics3 {
+	width: 900px;
+	height: 584px;
+	margin-left: 60px;
+	background-color: white;
+	position: relative;
+	
+	span#treugolnik{
+		padding-left: 10px;
+		font-size: $regular/1.8;
+	}
+	
+	
+	.panel-left{
+	width: 300px;
+	background-color: $bordo;
+	height: 584px;
+	float: left;
+	color: white;
+		
+	}
+	
+	.panel-left.green {
+	
+		h2.polosa{
+			@include polosa3;
+		}
+		button{
+			border: 1px solid white;
+			margin-top: 120px;
+		}
+	}
+	
+	.panel-left.green{
+			background-color: $green;
+		}
+	
+	.panel-center{
+			width: 210px;
+			padding: 0 40px 0 50px;
+			text-align: justify;
+			
+			h2{
+				
+				font-weight: 100;
+				font-size: $header-font;
+				
+			}
+			
+			h2.polosa{
+				margin-top: 20px;
+				@include polosa;
+			}
+
+			
+			p.img{
+				text-align: center;
+				margin-top: 62px;
+				margin-bottom: 27px;
+				
+				img{
+					height: 108px;
+				}
+			}
+		}
+		
+		p.description{
+			padding-top: 15px;
+			text-align: left;
+			font-size: 14px;
+			
+		}
+		
+		
+		p#button {
+			text-align: center;
+		
+			button{
+			background-color: $green;
+			border: 1px solid white;
+			@include border-radius(20px); 
+			color: white;
+			margin-top: 64px;
+			width: 180px;
+			height: 48px;
+			}
+			
+			button:hover{
+					background-color: $gray;
+					border: 1px solid white;
+				}
+		}
+		
+
+	.panel-right{
+	width: 600px;
+	height: 100%;
+	float: left;
+	background-repeat: no-repeat;
+	
+	}
+	
+	.panel-right.first{
+		background-image: url('../img/banner3.jpg');
+	}
+		
+	.panel-right.third{
+		background-image: url('../img/banner2.jpg');
+		
+	}
+	
+	article{
+		margin-top: 294px;
+		
+		position: relative;
+		background-color: white;
+		
+			img{
+				padding-bottom: 5px;
+				padding-left: 10px;
+			}
+		
+			h2{
+				font-weight: 100;
+				font-size: $header-font;
+				padding-bottom: 29px;
+				
+			}
+			
+			
+			
+			p{	@include polosa2;
+				padding-top: 18px;
+				margin-right: 110px;
+				text-align: left;
+				font-size: $regular;
+			}
+		}
+}
+div#cosmetics1{
+	margin-left: 57px;
+	
+	img.second-krug{
+			position: relative;
+			left: -100px;
+			top: 31px;
+		}
+		
+		article{
+			padding-left: 110px;
+		}
+}
+
+
+div#cosmetics3{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 117px;
+	
+	article{
+		padding-left: 73px;
+		margin-top: 320px;
+	}
+	
+}
+
+
+/*вторая секция медицина*/
+
+div#cosmetics2{
+	
+	margin-left: 57px;
+	
+	.panel-left{
+		width: 600px;
+		background-color: white;
+		height: 584px;
+		float: left;
+		background-image: url('../img/banner1.jpg');
+		background-repeat: no-repeat;
+		color: black;
+	
+		article{
+			padding-left: 110px;
+			padding-top: 0px;
+		}
+	
+	img.second-krug{
+			position: relative;
+			left: -100px;
+			top: 31px;
+		}
+	
+	h2,p{
+		margin-left: 0;
+	}
+	}
+	
+	.panel-right{
+	width: 300px;
+	height: 584px;
+	float: left;
+	background-color: $darkblue;
+	background-image: none;
+	color: white;
+	font-size: $regular;
+	
+		
+	}
+}
+
+img#extra-list1{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+img#extra-list2{
+	position: absolute;
+	top: 0;
+	right: 110px;
+}
+
+
+
+div#footer1{		
+	height: 291px;
+	background-image: url('../img/texture.jpg');
+	margin-top: 46px;
+	/* margin-bottom: 3px; */
+	padding-top: 15px;
+	position: relative;
+
+	
+	div#leaves{
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 60px;
+		
+		div.sub-leaves{
+			width: 180px;
+			height: 180px;
+			display: inline-block;
+			
+			.leaf{
+				
+				text-align: center;
+				vertical-align: bottom;
+				width: 180px;
+				height: 180px;
+		
+					p.leaf-digit{
+						font-size: 30px;
+						line-height: 206px;
+					}
+			}
+
+			p{
+				font-size: 14px;
+				text-align: center;
+				margin-top: 17px;
+			}
+		}
+	}
+
+
+	
+
+	
+	#circle1{
+		background-image: url("../img/circle1.png");
+	}
+	#circle2{
+		background-image: url("../img/circle2.png");
+	}
+	#circle3{
+		background-image: url("../img/circle3.png");
+	}
+	#circle4{
+		background-image: url("../img/circle4.png");
+	}
+	#circle5{
+		background-image: url("../img/circle5.png");
+	}
+	
+	
+	
+	
+	
+}
+
+

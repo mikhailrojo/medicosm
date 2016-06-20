@@ -1,0 +1,36 @@
+/*small-feedback*/
+@include breakpoint(max-width 960px){
+
+	div.outerAbout{
+	
+		background: url('../img/about-pic-sm.jpg') no-repeat;
+		background-position-x: 50%;
+		background-position-y: 430px;
+		height: 930px;
+		
+		
+		div.central.about{
+		
+		h1,h2{
+			font-size: 50px;
+			margin: 0;
+		    padding-bottom: 15px;
+			
+			img{
+				display: none;
+			}
+		}
+		
+		p{
+			margin-top: 20px;
+			margin-left: 0;
+		}
+		
+		img#krugi, img#karta{
+			display: none;
+		}
+	}
+
+	}
+	
+}//include breakpoint

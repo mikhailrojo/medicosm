@@ -1,0 +1,60 @@
+
+#leaf-decor1{
+	position: absolute;
+	height: 290px;
+	left: 240px;
+	bottom: 156px;
+}
+
+#leaf-decor2{
+	position: absolute;
+	height: 290px;
+	right: 240px;
+	bottom: 156px;
+}
+
+#leaf-decor3{
+	position: absolute;
+	height: 290px;
+	right: 75px;
+	bottom: 60px;
+}
+
+#leaf-decor4{
+	position: absolute;
+	height: 160px;
+	left: 240px;
+	bottom: 96px;
+}
+
+@include breakpoint(max-width 1850px){
+	#leaf-decor1, #leaf-decor2,#leaf-decor3,#leaf-decor4{
+		display: none;
+	}
+}
+
+
+img#decor-leaf1{
+	position: absolute;
+	left: 280px;
+	
+}
+
+img#decor-leaf2{
+	position: absolute;
+	left: 550px;
+	
+}
+
+img#decor-leaf3{
+	position: absolute;
+	left: 270px;
+	top: 150px;
+	opacity: 0.98;
+	
+}
+@include breakpoint(max-width 1000px){
+	#decor-leaf1, #decor-leaf2, #decor-leaf3{
+		display: none;
+	}
+}

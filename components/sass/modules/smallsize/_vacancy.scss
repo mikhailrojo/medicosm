@@ -1,0 +1,17 @@
+/*small-feedback*/
+@include breakpoint(max-width 960px){
+
+	div.central.vacancy{
+		h1 img{
+			display: none;
+		}
+	}	
+	body.vacancy{
+		background-image: none;
+	}
+}//include breakpoint
+
+@include breakpoint(max-width 500px){
+
+	
+}//include breakpoint

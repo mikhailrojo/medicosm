@@ -1,0 +1,34 @@
+<div class="outerSmall">
+	<div id="feedback" class="central">	
+		<h1>Обратная<img src="img/krugi.png" alt="kruzhok"> связь</h1>
+		<h2></h2>
+		<p>Мы всегда рады получить от вас отзывы и предложения. <br>Отправьте нам сообщение, заполнив форму, и мы ответим Вам!</p>
+		<div id="feedback-form">
+			<h3 ng-show="sentOk">medicosm@medicosm.ru</h3>
+			<h3 ng-hide="sentOk">Отправлено, спасибо!</h3>
+			<form  name="feedbackForm"  class="css-form" novalidate>
+				<div>
+					<input placeholder="Имя *" required ng-model="form.name" type="text">
+				</div>
+				<div>
+					<input placeholder="Адрес электронной почты *" ng-model="form.email" type="email" required>
+				</div>
+				<div>
+					<input placeholder="Город *" ng-model="form.city" type="text" required>
+				</div>
+				<div>
+					<input placeholder="+7 (___)___-__-__ " ng-model="form.phone" type="text" required>
+				</div>
+				<div>
+					<input placeholder="Компания *" ng-model="form.company" type="text" required>
+				</div>
+				<div>
+					<textarea placeholder="Введите текст сообщения *" ng-model="form.message" type="text" required>
+				</textarea>
+				</div>
+				<input type="submit" ng-disabled="feedbackForm.$invalid || feedbackForm.$submitted" ng-click="sendForm(form)">
+				
+			</form>
+		</div>
+	</div>
+</div>

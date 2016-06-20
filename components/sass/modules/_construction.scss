@@ -1,0 +1,35 @@
+div.construction{
+	h1{
+		font-weight: 300;
+		margin-top: 10px;
+		position: relative;	
+		
+		img{
+			position: absolute;
+			top: 25px;
+			margin-left: 35px;
+		}
+	}
+	
+	ul{
+		margin-top: -35px;
+		//margin-left: 86px;
+		
+		img#smallConstruction{
+			display: none;
+		}
+		
+		li{
+			display: inline-block;
+			margin-right: 59px;
+			text-align: center;
+			line-height: 59px;
+			
+			a{
+				text-decoration: underline;
+				font-size: 14px;
+				font-weight: 200;
+			}
+		}
+	}
+}

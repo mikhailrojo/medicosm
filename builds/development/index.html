@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="medicosm">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Академия красоты и здоровья. Каталог товаров для салонов красоты. Каталог товаров для парикмахерских. Все для красоты и здоровья. Товары для парикмахеров. Товары для красоты и здоровья. Товары для парикмахерских. Товары для салонов красоты. Парикмахерские принадлежности и аксессуары. Товары для профессионалов. Академия красоты и здоровья. Перчатки. Фартуки. Пеньюары. Шапочки. Воротнички. Полотенца. Фольга. Термобрашинги. Расчески. Бигуди и коклюшки. Кисточки и чаши для окраски. Зажимы для волос. Распылители. Щетки-сметки. Зеркала. Бахилы. Простыни для обертывания. Наматрасник. Шапочки. Маски. Одежда для клиентов. Полоски для депиляции. Носки-бахилы. Тапочки. Ватные палочки. Салфетки. Простыни. Перчатки. Спонжи.">
+    <meta name="keywords" content="академия красоты и здоровья,  каталог товаров для салонов красоты,  каталог товаров для парикмахерских,   все для красоты и здоровья, товары для парикмахеров, товары для красоты и здоровья, товары для парикмахерских, парикмахерские принадлежности и аксессуары, товары для салонов красоты, товары для профессионалов, академия красоты и здоровья, перчатки, фартуки, пеньюары, шапочки, воротнички, полотенца, фольга, термобрашинги, расчески, бигуди и коклюшки, кисточки и чаши для окраски, зажимы для волос, распылители, щетки-сметки, зеркала, бахилы, простыни для обертывания, наматрасник, шапочки, маски, одежда для клиентов, полоски для депиляции, носки-бахилы, тапочки, ватные палочки, салфетки, простыни, перчатки, спонжи">
+	<title>МЕДИКОСМ - косметология и медицина</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/angular/angular.js"></script>
+    <script type="text/javascript" src="js/angular/angular-route.min.js"></script>
+    </head>
+<body class="img" ng-controller="bodyCtrl">
+	<div id="bodyDiv">
+		  <!--[if lt IE 9]>
+            <p> Вы используете <strong>очень старый браузер</strong>, которые не поддерживает большинство современных технологий! Попробуйте обновить его, чтобы открыть для себя мир динамичных страниц!</p>
+        <![endif]-->
+        <my-header data="green"></my-header>
+	 	<ng-view></ng-view>
+	 	<my-footer></my-footer>
+	</div>	
+</body>
+<script type="text/javascript" src="js/mainCtrl.js"></script>
+<script type="text/javascript" src="js/server.js"></script>
+<script type="text/javascript" src="js/routes.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
+<script type="text/javascript" src="js/angular/angular-animate.min.js"></script>
+</html>

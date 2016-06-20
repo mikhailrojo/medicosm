@@ -1,0 +1,62 @@
+// style.scss
+// ==============
+ 
+//Compass imports
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/border-radius";
+
+//External Libraries
+@import "breakpoint";
+
+
+//Core Partial
+@import "modules/base";
+//Import Modules
+@import "modules/body";
+@import "modules/nav";
+@import "modules/footer";  
+@import "modules/mainPage";
+@import "modules/header";
+@import "modules/feedback";
+@import "modules/about";
+@import "modules/medicine";
+@import "modules/writeUs";
+@import "modules/leaf-decoration";
+@import "modules/contact";
+@import "modules/construction"; 
+@import "modules/cosmetics";
+@import "modules/vacancy"; 
+@import "modules/animate"; 
+@import "modules/forms";
+@import "modules/newsPanel";
+
+//Small size devices
+@import "modules/smallsize/smallsize";
+@import "modules/smallsize/medicine";
+@import "modules/smallsize/hamburgerButton";
+@import "modules/smallsize/navigation";
+@import "modules/smallsize/feedback";
+@import "modules/smallsize/contact";
+@import "modules/smallsize/construction";
+@import "modules/smallsize/about";
+@import "modules/smallsize/vacancy";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

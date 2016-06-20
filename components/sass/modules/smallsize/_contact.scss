@@ -1,0 +1,45 @@
+/*small-feedback*/
+@include breakpoint(max-width 960px){
+	div#outerContacts{
+		
+		background: url('../img/mapForContacts.jpg') 50% 210px no-repeat;
+		background-size: 80%;
+	}
+	
+	div#contactsPage {
+	
+
+		p.contactText{
+			color: $green;
+			position: absolute;
+			margin-left: 0;
+			font-size: 22px;
+			margin-top: 20px;
+			
+		}
+		
+		img.big-hidden{
+			display: inline-block;
+			margin-top: 180px;
+			margin-bottom: 50px;
+			width: 290px;
+		}
+		
+		img#contactMap{
+			display: none;
+		
+		}
+		
+		h1,h2{
+			margin: 0;
+			
+		}
+		h1{
+			margin-top: 17px;
+			font-weight: 300;
+			font-size: 50px;
+		}
+	}
+
+
+}//include breakpoint

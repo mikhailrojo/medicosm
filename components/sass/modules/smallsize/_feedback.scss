@@ -1,0 +1,58 @@
+/*small-feedback*/
+@include breakpoint(max-width 960px){
+
+	body.feedback{
+		background-image: none;
+	}
+	
+	div#bodyDiv.feedbackLeaves{
+		background: url('../img/feedback-leaf1-sm.png') no-repeat,
+					url('../img/feedback-leaf2-sm.png') right bottom no-repeat;
+	}
+
+	div.outerSmall{
+		background: url('../img/feedback-background-plus-sm2.png') 50% 240px no-repeat;
+	}
+	
+	div#feedback{
+		
+		h1{
+			img{
+				display: none;
+			}
+		}
+		
+		
+		h3{
+			display: none;
+		}
+	
+		div#feedback-form{
+			background-image: none;
+			top: 95px;
+			left: 0;
+			width: auto;
+			padding-top: 0;
+			padding-left: 0;
+			padding-bottom: 290px;
+			height: auto;
+			
+			input{
+				width: 275px;
+			}
+			
+			textarea{
+				width: 280px;
+				height: 62px;
+			}
+			
+			input[type=submit]{
+				width: 150px;
+		  		@include border-radius(25px);
+		  		background-color: white;
+		  		border-color: white;
+		  		box-shadow: none;
+	  		}
+		}
+	}//feedback
+}//include breakpoint

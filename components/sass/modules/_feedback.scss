@@ -1,0 +1,89 @@
+/*фидбэк*/
+
+div#feedback{
+	height: 820px;
+
+	tr.sucessfullySent td{
+		color: white;
+	}
+	
+	h1, h2{
+		margin-left: 0;
+		font-size: 60px;
+		font-weight: 200;
+		position: relative;
+		
+		img{
+			margin-left: 170px;
+			position: absolute;
+			top: 27px;
+		}
+	}
+	
+	h2{
+		margin-top: 19px;
+	}
+	
+	p{
+		font-size: 14px;
+		margin-top: 19px;
+		margin-bottom: 0;
+	}
+	
+	
+	div#feedback-form{
+		background-image: url('../img/feedback-background-plus.png');
+		background-repeat: no-repeat;
+		position: relative;
+		top: -100px;
+		left: -54px;
+		width: 775px;
+		padding-top: 190px;
+		padding-left: 150px;
+		padding-bottom: 145px;
+		
+		h3{
+			font-size: 35px;
+			color: white;
+			margin-bottom: 17px;
+			padding-left: 10px;
+		}
+		
+		input, textarea{
+		  @include border-radius(10px);
+		  box-shadow: none;
+		  appearance: none;
+		  border: none;
+		  line-height: 16px;
+		  width: 370px;
+		  padding-left: 12px;
+		  font-size: 14px;
+		  font-weight: 100;
+		  margin-top: 8px;
+		}
+		
+		
+		input{
+		 height: 20px;
+		 font-size: 14px;
+		}
+		
+		textarea{
+		  height: 175px;
+		}
+		
+		input:focus, textarea:focus {
+			outline: none;
+  		}
+  		
+  		input[type=submit]{
+	  		height: 48px;
+	  		width: 384px;
+	  		@include border-radius(25px);
+	  		background-color: white;
+	  		border-color: white;
+	  		box-shadow: none;
+  		}
+	}
+	
+}

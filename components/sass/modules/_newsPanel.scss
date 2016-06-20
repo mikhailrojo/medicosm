@@ -1,0 +1,89 @@
+#newsHeader{
+	width: 870px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 83px;
+	
+
+	.news{
+		//width: 270px;
+		padding-top: 20px;
+		margin-bottom: 25px;
+	
+		h3{
+			width: 270px;
+			@include polosa;
+		}
+		
+		h2{
+		
+			//@include polosa;
+			padding-left: 7px;
+			padding-top: 87px;
+			text-transform: uppercase;
+			font-size: $header-font;
+			color: white;
+			font-weight: 200;
+			margin-bottom: 10px;
+		}
+		
+		
+		
+			button{
+			background-color: $green;
+			border: 1px solid white;
+			@include border-radius(20px); 
+			color: white;
+			width: 180px;
+			height: 48px;
+			}
+			
+			button:hover{
+					background-color: $gray;
+					border: 1px solid white;
+				}
+		}
+}
+
+
+
+ 
+.panel{
+	position: relative;
+	
+	img{
+		max-width: 1000px;
+		min-width: 100%;
+		position: absolute;
+		top:0;
+		left: 0;
+		transition: 2s linear all;
+		opacity: 1;
+		z-index: -1;
+	}
+
+}
+
+div#change{
+	position: absolute;
+	top: -30px;
+	right: 0;
+	
+	div{
+		background-image: url('../img/krugi.png');
+		display: inline-block;
+		width: 13px;
+		height: 13px;
+		cursor: pointer;
+	}
+	div:nth-child(2){
+		background-position-x: 12px;
+	}
+	
+	div:nth-child(3){
+		background-position-x: 42px;
+	}
+
+}
+
+ 
