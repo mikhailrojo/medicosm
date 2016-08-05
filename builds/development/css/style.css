@@ -725,71 +725,128 @@ div.central img#krugi {
   margin-bottom: 25px;
 }
 
-div.central.medicine {
+div.central.medicine,
+div.central.cosmetics,
+div.central.sanitary {
   padding-top: 18px;
   padding-bottom: 34px;
 }
-div.central.medicine div.button {
+div.central.medicine div.button,
+div.central.cosmetics div.button,
+div.central.sanitary div.button {
   width: 140px;
   height: 140px;
   background-color: #4b5558;
   display: inline-block;
 }
-div.central.medicine div.button:hover {
-  background-color: #00548d;
-}
-div.central.medicine p {
+div.central.medicine p,
+div.central.cosmetics p,
+div.central.sanitary p {
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 0;
 }
-div.central.medicine .cosmText {
-  width: 350px;
-}
-div.central.medicine h5 a {
+div.central.medicine h5 a,
+div.central.cosmetics h5 a,
+div.central.sanitary h5 a {
   line-height: 28px;
   color: #66bc29;
   font-size: 20px;
   text-decoration: underline;
 }
-div.central.medicine h5 a:hover {
+div.central.medicine h5 a:hover,
+div.central.cosmetics h5 a:hover,
+div.central.sanitary h5 a:hover {
   color: #9a3056;
 }
-div.central.medicine ul#directions {
+div.central.medicine div.cosmText ul,
+div.central.cosmetics div.cosmText ul,
+div.central.sanitary div.cosmText ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: 40px;
+}
+div.central.medicine ul#directions,
+div.central.cosmetics ul#directions,
+div.central.sanitary ul#directions {
   list-style: disc inside;
 }
-div.central.medicine ul#directions ol {
+div.central.medicine ul#directions ol,
+div.central.cosmetics ul#directions ol,
+div.central.sanitary ul#directions ol {
   padding-left: 14px;
   padding-top: 14px;
   color: black;
 }
-div.central.medicine ul#directions > li {
+div.central.medicine ul#directions > li,
+div.central.cosmetics ul#directions > li,
+div.central.sanitary ul#directions > li {
   color: #66bc29;
 }
-div.central.medicine:before, div.central.medicine:after {
+div.central.medicine:before, div.central.medicine:after,
+div.central.cosmetics:before,
+div.central.cosmetics:after,
+div.central.sanitary:before,
+div.central.sanitary:after {
   content: '';
   display: table;
 }
-div.central.medicine:after {
+div.central.medicine:after,
+div.central.cosmetics:after,
+div.central.sanitary:after {
   clear: both;
 }
-div.central.medicine h1, div.central.medicine h2 {
+div.central.medicine h1, div.central.medicine h2,
+div.central.cosmetics h1,
+div.central.cosmetics h2,
+div.central.sanitary h1,
+div.central.sanitary h2 {
   margin-left: 0;
 }
-div.central.medicine aside {
+div.central.medicine h1 img, div.central.medicine h2 img,
+div.central.cosmetics h1 img,
+div.central.cosmetics h2 img,
+div.central.sanitary h1 img,
+div.central.sanitary h2 img {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+div.central.medicine aside,
+div.central.cosmetics aside,
+div.central.sanitary aside {
   width: 289px;
-  padding-left: 30px;
+  margin-left: -11px;
   float: left;
 }
-div.central.medicine aside div.highlighted {
+div.central.medicine aside div.highlighted,
+div.central.cosmetics aside div.highlighted,
+div.central.sanitary aside div.highlighted {
   background-color: #00548d;
 }
-div.central.medicine div.rightPart {
+div.central.medicine div.rightPart,
+div.central.cosmetics div.rightPart,
+div.central.sanitary div.rightPart {
   width: 530px;
   float: right;
 }
-div.central.medicine img.catalogue {
+div.central.medicine img.catalogue,
+div.central.cosmetics img.catalogue,
+div.central.sanitary img.catalogue {
   margin-top: 19px;
+}
+
+div.medicine div.button:hover {
+  background-color: #00548d;
+}
+
+div.cosmetics div.button:hover {
+  background-color: #9a3056;
+}
+
+div.sanitary div.button:hover {
+  background-color: #66bc29;
 }
 
 div#blackScreen {
@@ -995,69 +1052,6 @@ div.construction ul li a {
   text-decoration: underline;
   font-size: 14px;
   font-weight: 200;
-}
-
-/*косметикс*/
-div.cosmetics {
-  padding-top: 18px;
-  padding-bottom: 34px;
-}
-div.cosmetics:before, div.cosmetics:after {
-  content: '';
-  display: table;
-}
-div.cosmetics:after {
-  clear: both;
-}
-div.cosmetics div.button {
-  width: 140px;
-  height: 140px;
-  background-color: #4b5558;
-  display: inline-block;
-}
-div.cosmetics div.button:hover {
-  background-color: #9a3056;
-}
-div.cosmetics p {
-  margin-top: 25px;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-div.cosmetics h5 a {
-  line-height: 28px;
-  color: #66bc29;
-  font-size: 20px;
-  text-decoration: underline;
-}
-div.cosmetics h5 a:hover {
-  color: #9a3056;
-}
-div.cosmetics ul#directions {
-  margin-top: 24px;
-  list-style: disc inside;
-}
-div.cosmetics ul#directions ol {
-  padding-left: 14px;
-  padding-top: 14px;
-  color: black;
-}
-div.cosmetics ul#directions > li {
-  color: #66bc29;
-}
-div.cosmetics h1, div.cosmetics h2 {
-  margin-left: 0;
-}
-div.cosmetics aside {
-  width: 289px;
-  padding-left: 30px;
-  float: left;
-}
-div.cosmetics div.rightPart {
-  width: 530px;
-  float: right;
-}
-div.cosmetics img.catalogue {
-  margin-top: 19px;
 }
 
 /*вакансии*/
@@ -1346,58 +1340,43 @@ div#change div:nth-child(3) {
     width: 420px;
   }
 
-  div.central.medicine img.catalogue {
-    margin-bottom: 19px;
-  }
-  div.central.medicine h1 img {
-    display: none;
-  }
-  div.central.medicine aside {
-    padding-left: 0;
-  }
-  div.central.medicine h1, div.central.medicine h2 {
-    margin-left: 0;
-  }
-  div.central.medicine div.rightPart {
-    float: left;
-    width: auto;
-  }
-  div.central.medicine div.rightPart ul#directions {
-    display: none;
-  }
-
-  div.central.cosmetics div#rightPart {
-    width: 273px;
-    margin: 0 auto;
-  }
+  div.central.medicine img.catalogue,
+  div.central.sanitary img.catalogue,
   div.central.cosmetics img.catalogue {
     margin-bottom: 19px;
   }
-  div.central.cosmetics h1 {
-    font-size: 50px;
-    position: relative;
-  }
+  div.central.medicine h1 img,
+  div.central.sanitary h1 img,
   div.central.cosmetics h1 img {
-    /*
-    margin-left: 10px;
-    position: absolute;
-    top: 25px;
-    left: 320px;
-    */
     display: none;
   }
+  div.central.medicine aside,
+  div.central.sanitary aside,
   div.central.cosmetics aside {
     padding-left: 0;
   }
-  div.central.cosmetics h1, div.central.cosmetics h2 {
+  div.central.medicine h1, div.central.medicine h2,
+  div.central.sanitary h1,
+  div.central.sanitary h2,
+  div.central.cosmetics h1,
+  div.central.cosmetics h2 {
     margin-left: 0;
   }
+  div.central.medicine div.rightPart,
+  div.central.sanitary div.rightPart,
   div.central.cosmetics div.rightPart {
     float: left;
     width: auto;
   }
+  div.central.medicine div.rightPart ul#directions,
+  div.central.sanitary div.rightPart ul#directions,
   div.central.cosmetics div.rightPart ul#directions {
     display: none;
+  }
+
+  div.central.cosmetics h1,
+  div.central.sanitary h1 {
+    font-size: 48px;
   }
 }
 @media (min-width: 960px) {

@@ -1,0 +1,157 @@
+<upper-panel></upper-panel>
+ <div class="container" ng-controller="vacancyCtrl">
+	 <div class="row" ng-controller="vacancyCtrl">
+	  	<div class="col-md-12 col-sm-12 " >
+	       	<table class="table table-hover" >
+	       		<tr>
+	       			<th>№</th>
+		       		<th>Название вакансии</th>
+		       		<th>Оплата</th>
+		       		<th>Город</th>
+		       		<th>Опыт</th>
+		       		<th>Обязанности1</th>
+		       		<th>Обязанности2</th>
+		       		<th>Обязанности3</th>
+		       		<th>Обязанности4</th>
+		       		<th>Обязанности5</th>
+		       		<th>Обязанности6</th>
+		       		<th>Обязанности7</th>
+		       		<th>Обязанности8</th>
+		       		<th>Обязанности9</th>
+		       		<th>Обязанности10</th>
+		       		<th>Обязанности11</th>
+	       		</tr>
+	       		<tr ng-repeat="v in vacancies">
+	       			<td>{{$index+1}}</td>
+		       		<td>{{v.name}}</td>
+		       		<td>{{v.salary}}</td>
+		       		<td>{{v.city}}</td>
+		       		<td>{{v.experience}}</td>
+		       		<td>{{v.responsibility1}}</td>
+		       		<td>{{v.responsibility2}}</td>
+		       		<td>{{v.responsibility3}}</td>
+		       		<td>{{v.responsibility4}}</td>
+		       		<td>{{v.responsibility5}}</td>
+		       		<td>{{v.responsibility6}}</td>
+		       		<td>{{v.responsibility7}}</td>
+		       		<td>{{v.responsibility8}}</td>
+		       		<td>{{v.responsibility9}}</td>
+		       		<td>{{v.responsibility10}}</td>
+		       		<td>{{v.responsibility11}}</td>
+		       	</tr>
+	       	</table>
+	  	</div><!-- col-md-8 -->
+	</div><!-- row -->
+	<div class="row">
+		<form name="vacancyForm">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Название вакансии</span>
+				<input class="form-control" type="text" ng-model="vacancy.name" required>
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Оплата</span>
+				<input class="form-control" type="text" ng-model="vacancy.salary" required>
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Город</span>
+				<input class="form-control" type="text" ng-model="vacancy.city" required>
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Опыт</span>
+				<input class="form-control" type="text" ng-model="vacancy.experience" required>
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility1">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility2">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility3">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility4">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility5">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility6">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility7">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility8">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility9">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility10">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility11">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility12">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility13">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility14">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Обязанности</span>
+				<input class="form-control" type="text" ng-model="vacancy.responsibility15">
+			</div>
+			<br>
+			<div class="input-group pull-right">
+				<input class="btn btn-primary"   type="submit" ng-disabled="vacancyForm.$invalid" ng-click="addVacancy(vacancy)">
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</form>
+	</div>
+ </div>

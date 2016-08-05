@@ -1,5 +1,5 @@
  angular.module("medicosm")
- 	.config(function($routeProvider, $locationProvider){
+ 	.config(["$routeProvider","$locationProvider",  function($routeProvider, $locationProvider){
  		$routeProvider
  			.when('/contacts', {
 		 	templateUrl: 'views/contacts.html'
@@ -8,20 +8,20 @@
 			 	templateUrl: 'views/mainPage.html'
 		 	})
 		 	.when('/about', {
-			 	templateUrl: 'views/about.html'	
+			 	templateUrl: 'views/about.html'
 		 	})
 		 	.when('/medicine', {
 			 	templateUrl: 'views/medicine.html',
 			 	controller: 'blueCtrl'
 		 	})
 		 	.when('/cosmetics', {
-			 	templateUrl: 'views/cosmetics.html'	
+			 	templateUrl: 'views/cosmetics.html'
 		 	})
 		 	.when('/vacancy', {
-			 	templateUrl: 'views/vacancy.html' 	
+			 	templateUrl: 'views/vacancy.html'
 		 	})
 		 	.when('/sanitary', {
-			 	templateUrl: 'views/sanitary.html' 
+			 	templateUrl: 'views/sanitary.html'
 		 	})
 		 	.when('/contacts', {
 			 	templateUrl: 'views/contacts.html'
@@ -43,5 +43,4 @@
 		 	.otherwise({
 			 	templateUrl: 'views/construction.html'
 		 	});
-		 })
-		
+    }])

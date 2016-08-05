@@ -12,7 +12,9 @@
 	}
 
 	
-	div.central.medicine{
+	div.central.medicine,
+	div.central.sanitary,
+	div.central.cosmetics{
 		
 		
 		img.catalogue{
@@ -41,53 +43,13 @@
 		}
 	}
 	
-	div.central.cosmetics{
-	
-	
-		div#rightPart{
-			width: 273px;
-			margin: 0 auto;
-		}
-	
+	div.central.cosmetics, 
+	div.central.sanitary{
 
-		
-		img.catalogue{
-			margin-bottom: 19px;
-		}
-		
 		h1 {
 		
-		font-size: 50px;
-		position: relative;
-		
-			img{
-				/*
-				margin-left: 10px;
-				position: absolute;
-				top: 25px;
-				left: 320px;
-				*/
-				display: none;
-				
-			}
-		}
-		
-		
-		aside{
-			padding-left: 0;
-		}
-		
-		h1, h2{
-			margin-left: 0;
-		}
-		
-		div.rightPart{
-			float: left;
-			width: auto;
-			
-			ul#directions{
-				display: none;
-			}
+		font-size: 48px;
+
 		}
 	}
 

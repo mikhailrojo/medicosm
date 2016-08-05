@@ -1,4 +1,7 @@
-div.central.medicine{
+
+div.central.medicine,
+div.central.cosmetics,
+div.central.sanitary{
 
 	div.button{
 		width: 140px;
@@ -6,16 +9,11 @@ div.central.medicine{
 		background-color: $darkGrey;
 		display: inline-block;
 	}
-	div.button:hover{
-		background-color: $darkblue;
-	}
+	
 	p{	
 		font-size: 14px;
 		margin-top: 20px;
 		margin-bottom: 0;
-	}
-	.cosmText{
-		width: 350px;
 	}
 	
 	
@@ -29,6 +27,15 @@ div.central.medicine{
 	h5 a:hover{
 		color: $bordo;
 		}	
+		
+	div.cosmText ul{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		list-style-type: disc;
+		list-style-position: inside;
+		text-indent: 40px;
+	}
+
 	
 	
 	ul#directions{
@@ -49,11 +56,17 @@ div.central.medicine{
 	
 	h1,h2{
 		margin-left: 0;
+		
+		img{
+			padding-bottom: 10px;
+			padding-left: 20px;
+		}
 	}
+	
 	
 	aside{
 		width: 289px;
-		padding-left: 30px;
+		margin-left: -11px;
 		float: left;
 		
 		div.highlighted{
@@ -73,6 +86,26 @@ div.central.medicine{
 	
 	
 	
+}
+div.medicine{
+	div.button:hover{
+		background-color: $darkblue;
+	}
+}
+
+
+div.cosmetics{
+	div.button:hover{
+		background-color: $bordo;
+	}
+}
+
+
+
+div.sanitary{
+	div.button:hover{
+		background-color: $green;
+	}
 }
 
 	

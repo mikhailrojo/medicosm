@@ -22,7 +22,6 @@ angular.module("medicosm")
 	 		changeColour($location.url());
 	 			$rootScope.$on('$locationChangeSuccess', function(){
 	 				changeColour($location.url());
-					console.log($location.url());
 	 				var headerNav = document.getElementById("header-nav").classList.remove("active");
 	 				document.getElementById("hamburger").classList.remove("active");
 	 			});

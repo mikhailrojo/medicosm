@@ -16,7 +16,7 @@
  			}
 	 	}
  	}])
- 	.controller("bodyCtrl", function($scope, contactForm){
+ 	.controller("bodyCtrl", ["$scope", "contactForm", "$location", "$anchorScroll", function($scope, contactForm, $location, $anchorScroll){
  		$scope.removeMe = function(){
 	 		$scope.formShowWrite = false;
 	 		$scope.formShowCall = false;
@@ -24,8 +24,10 @@
 	 	$scope.makeVisible = function(param){
 	 		contactForm(param, $scope);
 	 	};
-	})
-	.controller("formCtrl", function($scope, sendEmail, $timeout){
+	 	$location.hash('up');
+	 	 $anchorScroll();
+	}])
+	.controller("formCtrl", ["$scope", "sendEmail", "$timeout",  function($scope, sendEmail, $timeout){
 		$scope.requestCall = function(form){
 			sendEmail(form);
 	 		$scope.wasSent = true;
@@ -45,7 +47,7 @@
 
 
 		}
-	})
+	}])
 	.controller('feedbackCtrl', ['moveLeaf', '$scope', 'sendEmail', '$location', '$anchorScroll', function(moveLeaf, $scope, sendEmail, $location, $anchorScroll){
 		moveLeaf();
 		$scope.sentOk = true;
@@ -57,12 +59,12 @@
     $anchorScroll();
 
 	}])
- 	.factory('sendEmail', function($http){
+ 	.factory('sendEmail', ["$http",function($http){
 	 	return function(formDetails){
 		 	$http.post('/sendEmail.php', formDetails)
 		 		.then(function(){console.log("данные прошли")}, console.log("произошла ошибка") );
 	 	}
- 	})
+ 	}])
  	.factory("contactForm", function(){
  	// this factory services to show contact form, centralize it and make background dimmed while active
  		function centralize(param){
