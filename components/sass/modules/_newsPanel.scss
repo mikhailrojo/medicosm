@@ -11,7 +11,7 @@
 		margin-bottom: 25px;
 	
 		h3{
-			width: 270px;
+			width: 270px; 
 			@include polosa;
 		}
 		
@@ -19,7 +19,7 @@
 		
 			//@include polosa;
 			padding-left: 7px;
-			padding-top: 87px;
+			padding-top: 52px; //87
 			text-transform: uppercase;
 			font-size: $header-font;
 			color: white;

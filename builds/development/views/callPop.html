@@ -19,7 +19,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td> <h3><button ng-disabled="myForm1.$invalid">перезвонить</button></h3> </td>
+					<td> <h3><button ng-disabled="(myForm1.$invalid || wasSent)">перезвонить</button></h3> </td>
 				</tr>
 			</table>
 		</form>

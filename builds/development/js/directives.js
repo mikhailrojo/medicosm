@@ -80,11 +80,13 @@ angular.module("medicosm")
 				var n = 0;
 				changeImage(0);
 
-				$interval(function(){
+				$timeout(function innerFn(){
 					n++;
 					n = n % images.length;
 					changeImage(n);
+					$timeout(innerFn, 10000);
 				},10000);
+				
 
 				function changeImage(n){
 					for (var i = 0; i < images.length; i++){

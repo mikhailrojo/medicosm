@@ -29,8 +29,12 @@
 	}])
 	.controller("formCtrl", ["$scope", "sendEmail", "$timeout",  function($scope, sendEmail, $timeout){
 		$scope.requestCall = function(form){
-			sendEmail(form);
-	 		$scope.wasSent = true;
+			console.log("requestCall : ", $scope.wasSent);
+			if(!$scope.wasSent){
+				sendEmail(form);
+				$scope.wasSent = true;
+			}
+			
 
 			$timeout(function(){
 				$scope.removeMe();
@@ -38,8 +42,11 @@
 
 		}
 		$scope.writeLetter = function(form){
-			sendEmail(form);
-			$scope.wasSent = true;
+			console.log("writeLetter : ", $scope.wasSent);
+			if(!$scope.wasSent){
+				sendEmail(form);
+				$scope.wasSent = true;
+			}
 
 			$timeout(function(){
 				$scope.removeMe();

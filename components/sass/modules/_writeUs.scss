@@ -26,12 +26,12 @@ div.popUp{
 	padding: 44px 70px 30px 46px;
 	border: 2px solid black;
 	z-index: 3;
-	
-	
+
+
 	img{
 		width: 115px;
 	}
-	
+
 	h3{
 		font-size: 35px;
 		color: $green;
@@ -40,13 +40,13 @@ div.popUp{
 	label{
 		color: white;
 	}
-	
+
 	label.gorod{
 		margin-right: 19px;
 		margin-bottom:  30px;
 	}
-	
-	
+
+
 	input{
 		width: 377px;
 		@include border-radius(5px);
@@ -69,19 +69,19 @@ div.popUp{
 		margin-bottom: 22px;
 		text-align: center;
 	}
-	
+
 	button{
 		@include border-radius(20px);
 		border: 1px solid white;
-		padding: 16px 25px; 
+		padding: 16px 25px;
 		color: white;
 		background-color: $grayish;
 		width: 177px;
 		margin-top: 20px;
 		font-size: $grayish;
 	}
-	
-	
+
+
 	td{
 		padding-right: 40px;
 		font-weight: 100;
@@ -95,13 +95,13 @@ form.ng-valid button:hover{
 
 div.callPop{
 	height: 318px;
-	
+
 }
 
 div.writePop{
-	height: 447px;
-	
+	height: 467px;
 
-	
+
+
 
 }

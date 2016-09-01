@@ -34,12 +34,12 @@ gulp.task("serve", function(){
 	browserSync.watch("builds/development/**/*.*").on("change", browserSync.reload);
 });
 
-// gulp.task('js', function(){
-//   gulp.src(dir + '/js/*.js')
-//     .pipe(uglify())
-//     .pipe(concat('all.js'))
-//     .pipe(gulp.dest(prod+'/js'));
-// });
+ gulp.task('js', function(){
+   gulp.src(dir + '/js/*.js')
+     .pipe(uglify())
+     .pipe(concat('all090816.js'))
+     .pipe(gulp.dest(prod+'/js'));
+ });
 
 // gulp.task('html', function(){
 //   gulp.src(dir + '/**/*.html')
